@@ -20,7 +20,8 @@ let userpickedPaper =  document.getElementById('paperbtn');
 let userpickedScissor = document.getElementById('scissorbtn');
 
 
-userpickedRock.addEventListener('click', ()=>{
+userpickedRock.addEventListener('click', ()=> 
+{
     let displayElement = document.getElementById('you-picked');
     displayElement.innerHTML = <img src="rock.png" alt="Rock" srcset="">;
 
@@ -42,9 +43,9 @@ userpickedRock.addEventListener('click', ()=>{
 })
 
 
-userpickedPaper.addEventListener('click', ()=>{
+userpickedPaper.addEventListener('click', () => {
     let displayElement = document.getElementById('you-picked');
-    displayElement.innerHTML = <img src="Paper.png" alt="Paper" srcset="">;
+    displayElement.innerHTML = <img src="paper.png" alt="Paper" srcset="">;
 
     let options = document.getElementById('options');
     options.style.display = 'none';
@@ -66,7 +67,7 @@ userpickedPaper.addEventListener('click', ()=>{
 
 userpickedScissor.addEventListener('click', ()=>{
     let displayElement = document.getElementById('you-picked');
-    displayElement.innerHTML = <img src="scissors.png" alt="Scissor" srcset="">;
+    displayElement.innerHTML = <img src="scissors.png" alt="Scissors" srcset="">;
 
     let options = document.getElementById('options');
     options.style.display = 'none';
@@ -95,11 +96,11 @@ let compicked = ['Rock', 'Paper', 'Scissor'];
     let compickedRandom = compicked[compickedIndex];
 
     if(compickedRandom == 'Rock'){
-        comDisplay.innerHTML = '<img src="Images/Rock.png" alt="Rock" srcset="">';
+        comDisplay.innerHTML = '<img src="rock.png" alt="Rock" srcset="">';
     }else if(compickedRandom == 'Paper'){
-        comDisplay.innerHTML = '<img src="Images/Paper.png" alt="Paper" srcset="">';
+        comDisplay.innerHTML = '<img src="paper.png" alt="Paper" srcset="">';
     }else if(compickedRandom == 'Scissor'){
-        comDisplay.innerHTML = '<img src="Images/Scissor.png" alt="Scissor" srcset="">';
+        comDisplay.innerHTML = '<img src="scissors.png" alt="Scissor" srcset="">';
     }
 
 
